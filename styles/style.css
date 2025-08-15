@@ -46,7 +46,7 @@
   border-inline-start: 1px var(--accent-color-btn) solid;
   border-block-end: 1px var(--accent-color-btn) solid;
   inline-size: 25px;
-  aspect-ratio: 1/1;  
+  aspect-ratio: 1/1; 
 }
 
 .header__decor {
@@ -117,7 +117,7 @@
   margin: 0;
   color: var(--bg-color);
   line-height: 23px;
-  inline-size: clamp(355px, 50%, 491px); 
+  inline-size: clamp(355px, 50%, 491px);
 }
 
 .header__title-decor {
@@ -299,9 +299,9 @@ h4.article-title {
     align-items: start;
   }
 
-  .question__why.section__title {
+  /*.question__why.section__title {
 
-  }
+  }*/
 
   .article__title {
     margin-block: 0;
