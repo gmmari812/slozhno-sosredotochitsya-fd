@@ -4,18 +4,14 @@
 */
 
 :root {
-  --text-color: rgba(241, 178, 206, 1);
   --main-font: "IBM Plex mono", monospace;
-  --background: rgba(0, 0, 40, 1) url("../images/cover-image-dark.png")
-  no-repeat center / cover;
-  --accent-color: rgba(255, 0, 112, 1);
-  --accent-color-btn: rgba(255, 0, 112, 1);
-  --text-color-accent: rgba(219, 0, 255,1);
-  --bg-color: rgba(0, 0, 40,1);
-  --accent-color-title: rgba(255, 0, 112, 1);
-  --display-header-decor: inline-flex;
-  --color-section-title: rgba(255, 0, 112, 1);
+  --heading-text: rgb(219, 0, 255);
+  --text-color: rgb(241, 178, 206);
+  --bg-image:url("../images/cover-image-dark.png");
+  --accent-color: rgb(255, 0, 112);
+  --bg-color: rgb(0, 0, 40);
+  --title-color: rgb(219, 0, 255);
+  --subtitle-color: rgb(0, 0, 40);
   --accent-color-opacity: rgba(255, 0, 112, 0.4);
-  --logo-size__mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --logo-size__desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+
 }
