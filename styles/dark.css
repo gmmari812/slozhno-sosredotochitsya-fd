@@ -5,11 +5,20 @@
 */
 
 :root.theme-dark {
-  --text-color: rgb(241, 178, 206);
-  --bg-image: url("../images/cover-image-dark.png");
-  --accent-color: rgb(255, 0, 112);
-  --text-color-accent: rgb(219, 0, 255);
+  --main-font: "IBM Plex mono", monospace;
+  --transition-duration: 0.3s;
+
   --bg-color: rgb(0, 0, 40);
-  --display-header-decor: inline-flex;
-  --accent-color-opacity: rgba(255, 0, 112, 0.4);
+  --bg-image:url("../images/cover-image-dark.png");
+
+  --text-color: rgb(241, 178, 206);
+  --heading-text: rgb(219, 0, 255);
+  --title-color: rgb(219, 0, 255);
+  --subtitle-color: rgb(0, 0, 40);
+
+  --accent-color: rgb(255, 0, 112);
+  --accent-color-opacity: rgba(255, 0, 112, 0.4); 
+  --accent-color-btn: rgb(255, 0, 112);
+  
+  --text-color-accent: rgb(219, 0, 255); 
 }

@@ -63,16 +63,13 @@ font-weight: 400;
 .header__decor::before {
   position: absolute;
   content: "REC";
-  align-content: center;
   font-size: 18px;
   text-transform: uppercase;
   color: var(--accent-color);
   font-weight: 400;
   line-height: 18px;
   right: 28px;
-  font-style: normal;
   top: 3px;
-  
 }
 
 
@@ -101,7 +98,6 @@ font-weight: 400;
   border: transparent 1px solid;
   padding: 3px 13px;
   font-size: 18px;
-  font-weight: 400;
   line-height: 100%;
   text-transform: lowercase;
   background: transparent;
@@ -129,7 +125,7 @@ background-color: var(--accent-color);
 }
 
 
-/* HEADER UI */
+/* UI */
 
 .header__theme-menu-button:hover {
   border: var(--accent-color-opacity) 1px solid;
@@ -180,9 +176,12 @@ background-color: var(--accent-color);
 }
 
 .article__list {
-  display: grid;
+  display: flex;
+  justify-content: flex-start;
+  margin-block-end: 80px;
   gap: 20px;
 }
+
 
 .article__text {
   font-weight: 400;
@@ -209,11 +208,6 @@ background-color: var(--accent-color);
 }
 
 
-
-.question__what .content__title {
-  max-width: clamp(236px, 468.5504px + -30.2799vw, 355px);
-}
-
 .what__container {
   display: grid;
   gap: 20px;
@@ -239,22 +233,7 @@ background-color: var(--accent-color);
   margin-block-end: 63px;
 }
 
-/*.section:last-of-type .art__img {
-  object-fit: cover;
-  object-position: center;
-  width: 100%;
-  height: 100%;
-}
-
-.section:last-of-type .art__img:first-of-type,
-.section:last-of-type .art__img:last-of-type {
-  grid-column: span 2;
-}
-
-.section:last-of-type .art__img:nth-of-type(2),
-.section:last-of-type .art__img:nth-of-type(3) {
-  grid-row: span 2;
-}*/
+/* GALLERY */
 
 .section:last-of-type {
   display: grid;
@@ -271,30 +250,6 @@ background-color: var(--accent-color);
   font-size: 18px;
   font-weight: 700;
   color: var(--accent-color);
-}
-
-.article__text {
-  color: var(--text-color);
-}
-
-.article__list {
-  display: flex;
-  justify-content: flex-start;
-  margin-block-end: 80px;
-  gap: 20px;
-}
-
-.section:first-of-type, 
-.section:nth-of-type(3) {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.section:last-of-type .section__title {
-  grid-column: 1/-1;
-  width: 100%;
-  margin: 0;
 }
 
 .dark-title {
@@ -383,7 +338,7 @@ background-color: var(--accent-color);
 
 
 @media (min-width: 320px) and (max-width: 767px) {
-  .main  {
+  .main {
     padding: 0 10px;
   }
 
@@ -516,7 +471,7 @@ background-color: var(--accent-color);
 }
 
 
-@media (min-width: 768px) and (max-width: 1023px){
+@media (min-width: 768px) and (max-width: 1023px) {
   .header__title {
     margin-left: -3%;
   }

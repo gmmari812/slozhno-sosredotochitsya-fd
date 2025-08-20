@@ -5,28 +5,40 @@
 */
 
 :root.theme-light {
+  --main-font: "IBM Plex mono", monospace;
+  --transition-duration: 0.3s;
+
+  --bg-color: rgb(53, 52, 48);
+  --bg-image: url("../images/cover-image-light.png");  
+
   --text-color: rgb(53, 52, 48);
-  --bg-image: url("../images/cover-image-light.png");
-  --accent-color: rgb(255, 0, 112);
-  --text-color-accent: rgba(255, 194, 230);
-  --bg-color: rgba(53, 52, 48);
-  --accent-color: rgba(255, 141, 203);
-  --accent-color-opacity: rgba(53, 52, 48, 0.4);
+  --heading-color: rgb(255, 194, 230);
+  --subtitle-color: rgb(53, 52, 48);
+
+  --accent-color: rgb(255, 141, 203);
+  --accent-color-opacity: rgba(255, 141, 203, 0.4);
+  --accent-color-btn: rgb(255, 141, 203);
+
+  --text-color-accent: rgb(255, 0, 112);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-     --text-color: rgba(53, 52, 48, 1);
-    --background: rgba(255, 241, 247, 1) url("../images/cover-image-light.png")
-    no-repeat center / cover;
-    --accent-color: rgba(255, 0, 112, 1);
-    --accent-color-btn: rgba(53, 52, 48, 1);
-    --text-color-accent: rgba(255, 194, 230, 1);
-    --bg-color: rgba(53, 52, 48, 1);
-    --accent-color-title: rgba(255, 141, 203,1);
-    --display-header-decor: none;
-    --color-section-title: rgba(53, 52, 48, 1);
-    --accent-color-opacity: rgba(53, 52, 48, 0.4);
+  --main-font: "IBM Plex mono", monospace;
+  --transition-duration: 0.3s;
+
+  --bg-color: rgb(53, 52, 48);
+  --bg-image: url("../images/cover-image-light.png");  
+
+  --text-color: rgb(53, 52, 48);
+  --heading-color: rgb(255, 141, 203);
+  --subtitle-color: rgb(53, 52, 48);
+
+  --accent-color: rgb(255, 141, 203);
+  --accent-color-opacity: rgba(255, 141, 203, 0.4);
+  --accent-color-btn: rgb(255, 141, 203);
+
+  --text-color-accent: rgb(255, 0, 112);
   }
 }
 
