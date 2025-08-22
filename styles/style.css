@@ -6,7 +6,7 @@ background-image: var(--bg-image);
 background-size: cover;
 background-attachment: fixed;
 background-position: center;
-font-family: var(--main-font), monospace, sans-serif;
+font-family: var(--main-font), sans-serif;
 }
 
 /* HEADER */
@@ -103,7 +103,7 @@ font-family: var(--main-font), monospace, sans-serif;
 font-weight: 700;
 font-size: 18px;
 color: var(--accent-text-color);
-font-weight: 700;
+line-height: 23.4px;
 }
 
 .title-decor {
@@ -111,7 +111,7 @@ font-weight: 700;
 }
 
 
-/* UI */
+/* BUTTONS */
 
 .header__theme-menu-button:hover {
   outline: var(--accent-color-opacity) 1px solid;
@@ -236,7 +236,7 @@ font-weight: 700;
 
 .footer__title {
   align-self: center;
-  color: var(--heading-text);
+  color: var(--title-color);
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   line-height: 82.5%;
   text-shadow: 2px 2px 0 var(--accent-color);
@@ -244,7 +244,6 @@ font-weight: 700;
 
 
 @media (width >= 768px) {
-
   .header {
     padding: 20px 20px;
     height: max(100vh, 1024px);
@@ -266,7 +265,7 @@ font-weight: 700;
   }
 
   .header__title {
-    font-size: clamp(7.5rem, 0,5625rem +14.4531vw, 9.8125rem);
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     margin-inline-start: -20px;
   }
 
@@ -280,18 +279,17 @@ font-weight: 700;
     gap: 80px;
   }
 
-  .focus, 
-  .question__how {
+  .content__section-partial {
     grid-template-columns: 1fr 2fr;
     column-gap: 20px;
   }
 
-  .questtion__what {
+  .content__section-full {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
   }
 
-  .questtion__what-container {
+  .content__section-full-container {
     grid-column: 1 / span 3;
   }
 
@@ -324,7 +322,7 @@ font-weight: 700;
   }
 
   .footer__title {
-    font-size: clamp(7.5rem, 0,5625rem +14.4531vw, 9.8125rem);
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
@@ -344,15 +342,14 @@ font-weight: 700;
   }
 
   .header__text {
-    width: max(calc(50vw-42px), 491px);
+    width: max(calc(50vw - 42px), 491px);
   }
 
-  .focus, 
-  .question__how {
+  .content__section-partial {
     column-gap: 10px;
   }
 
-  .questtion__what-container {
+  .content__section-full-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
