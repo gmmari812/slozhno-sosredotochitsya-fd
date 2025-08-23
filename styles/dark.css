@@ -12,8 +12,7 @@
   --bg-image:url("../images/cover-image-dark.png");
 
   --title-color: #db00ff;
-  --shadow-color: #ff0070;
-  --heading-text: #ff0070;
+  --heading-theme-color: #ff0070;
   --accent-text-color: #000028;
   --accent-color: #ff0070;
   --accent-color-opacity: rgba(255, 0, 112, 0.4);
